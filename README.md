@@ -85,3 +85,17 @@ npm i @paypal/react-paypal-js
 
 # Cloudinary
 npm i cloudinary
+
+<!-- Subir a Git  -->
+git branch -M main
+git checkout main
+
+## Desplegar
+# Base de datos  "NEON"
+# Vercel
+Storage>Postgresql>Creamos ```teslo-db````>Cadena de conexionen .env
+Data >
+<!-- Crea en la base de datos remota o de produccion -->
+npx prisma migrate deploy
+npm run seed
+
