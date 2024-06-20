@@ -93,9 +93,13 @@ git checkout main
 ## Desplegar
 # Base de datos  "NEON"
 # Vercel
+Desplegar Base de Datos
 Storage>Postgresql>Creamos ```teslo-db````>Cadena de conexionen .env
 Data >
 <!-- Crea en la base de datos remota o de produccion -->
 npx prisma migrate deploy
 npm run seed
 
+Proyecto
+
+copiar todo .env y pegar las variables de entorno vercel acomodara todo por ti
