@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from 'react'
 
-import { Swiper as SwiperObject } from 'Swiper'
+// import { Swiper as SwiperObject } from 'Swiper'
+import { Swiper as SwiperObject } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 // import 'swiper/css'
 // Import Swiper styles

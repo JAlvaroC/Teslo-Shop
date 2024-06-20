@@ -104,3 +104,13 @@ Proyecto
 
 copiar todo .env y pegar las variables de entorno vercel acomodara todo por ti
 # Teslo-Shop
+
+Corrigiendo la conexeion :
+git remote set-url origin https://github.com/JAlvaroC/Teslo-Shop.git
+
+
+
+
+git remote add origin https://github.com/JAlvaroC/Teslo-Shop.git
+git branch -M main
+git push -u origin main
