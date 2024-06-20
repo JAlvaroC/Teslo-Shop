@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dependencias
+npm install react-icons --save
 
-## Getting Started
+npm install zustand
 
-First, run the development server:
+npm i clsx
+ npm install swiper
+# Correr en Dev
+1. Clonar el repositorio
+2. Crear una copia del ```.env.template``` y renombrarlo a ```.env``` y cambiar las variables de entorno.
+3. Instalar dependencias    ```   npm install   ```
+4. Levantar la base de datos ```docker compose up -d```
+5. Correr las migraciones de Prisma ```npx prisma migrate dev```
+6. Ejecutar el seed ```npm run seed ```
+7. Correr el proyecto   ```   npm run dev   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Revision de Warnings para desplegar
+1. ```npm run build```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npm install react-hook-form
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<!-- En nuestro caso tenemos que activar en Pg admin el puerto -->
+<!-- Fernando trabaja con 1 al 6  -->
+<!-- Contraseña de 1 al 8 es algo que yo connfigure en PGadmin e password-->
+# Correr en Prod
+docker --version
+docker compose up -d
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+npm install prisma --save-dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+npx prisma init --datasource-provider PostgreSQL
 
-## Deploy on Vercel
+<!-- npx prisma migrate dev --name <init> -->
+npx prisma migrate dev --name ProductCategory
+<!-- Volver levantar -->
+npx prisma migrate dev --name ProductImage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+npx prisma migrate dev --name country
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Prisma
+1.- Pasa de Tabla a Codigo 
+npx prisma db pull
+
+# Ejecutar TS
+
+npm i -D ts-node
+
+cd src/seed/
+npm run seed
+
+- crear un tsconfing para que funcione el script
+npx tsc --init
+
+
+# nGROOK
+<!-- descomprimimos yy ejecutamos -->
+<!-- autenticamos -->
+ngrok config add-authtoken 2hLArUemTXmXazK42IX7Kle3o0j_kGP3pztqWJVTqX27ZLQV
+<!-- ngrok http http://localhost:8080 -->
+<!-- ngrok http http://localhost:3000 -->
+<!-- puerto y obtenemos url-->
+ngrok http 3000
+
+
+
+<!-- juntamos la url  para ponerlo en  https://www.opengraph.xyz/url/https%3A%2F%2F3522-190-43-118-47.ngrok-free.app%2Fproduct%2Fmen_raven_lightweight_hoodie -->
+https://3522-190-43-118-47.ngrok-free.app/product/men_raven_lightweight_hoodie
+
+
+# NextAuth
+<!-- npm install next-auth -->
+npm install next-auth@beta
+
+<!-- openssl rand -base64 32 -->
+
+npm i zod
+npm i bcryptjs
+
+# Paypal
+npm i @paypal/react-paypal-js
+
+# Cloudinary
+npm i cloudinary
