@@ -16,7 +16,7 @@ interface Props {
   title: string
   className?: string
 }
-
+// Modificado
 export const ProductMobileSlideshow = ({ images, title, className }: Props) => {
   return (
     <div className={className}>
