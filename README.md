@@ -103,3 +103,4 @@ npm run seed
 Proyecto
 
 copiar todo .env y pegar las variables de entorno vercel acomodara todo por ti
+# Teslo-Shop
